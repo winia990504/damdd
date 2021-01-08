@@ -841,8 +841,8 @@ section{
 @media only screen and (max-width: 767px) {
     .wrap{
         position:relative;
-        height:calc(100% - 75px);
-        top: 75px;
+        height:calc(100% - 85px);
+        top: 85px;
         
     }
     }
