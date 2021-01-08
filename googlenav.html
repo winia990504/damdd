@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="googlenav.css">
+    <script src="prac1.js" defer></script>
+    <title>Responsive Navbar</title>
+</head>
+
+<!--<div class="logo">
+            <a href="index.html">
+                <img src="logo.png"></img>
+            </a>
+        </div>-->
+<body>
+    <header>
+        <div class="container">
+            <input type="checkbox" name="" id="check">
+            
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="logo.png"></img>
+                </a>
+            </div>
+
+            <div class="nav-btn">
+                <div class="nav-links">
+                    <ul>
+                        <li class="nav-link" style="--i: .6s">
+                            <a href="#">미술관 소개<i class="fas fa-caret-down"></i></a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li class="dropdown-link">
+                                        <a href="#">관장/이사장 인사말</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#">조직도</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#">연혁/설립 목적</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-link" style="--i: .85s">
+                            <a href="#">이용안내<i class="fas fa-caret-down"></i></a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li class="dropdown-link">
+                                        <a href="#">관람안내</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#">찾아 오시는 길</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-link" style="--i: 1.1s">
+                            <a href="#">서비스<i class="fas fa-caret-down"></i></a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li class="dropdown-link">
+                                        <a href="#">문화 프로그램</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#">갤러리 대관</a>
+                                    </li>
+                                   
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-link" style="--i: 1.35s">
+                            <a href="#">English</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="hamburger-menu-container">
+                <div class="hamburger-menu">
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </header>
+    
+    
+        <!--메인 컨텐츠-->
+
+       <div class= "wrap">
+
+            <div class="slideshow-container">
+    
+                <div class="mySlides fade">
+                 <!---------- <div class="numbertext">1 / 3</div> --------------->
+                  <img src="images/image2.jpg" style="width:100%">
+                  <div class="text">근현대사 미술관 담다에 오신걸 환영합니다</div>
+                </div>
+                
+                <div class="mySlides fade">
+                 <!---------- <div class="numbertext">2 / 3</div>----------------->
+                  <img src="images/image3.jpg" style="width:100%">
+                  <div class="text">근현대사 미술관 담다에 오신걸 환영합니다</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <!----------<div class="numbertext">3 / 3</div>----------->
+                  <img src="images/image1.jpg" style="width:100%">
+                  <div class="text">근현대사 미술관 담다에 오신걸 환영합니다</div>
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+            </div>
+                
+                <!---
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+            --->
+             </div> 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+            <!--푸터-->
+            <div class="footer">
+                <div class="footer-content">
+                    <p>
+                        근현대사 미술관 담다
+                        <a href="https://band.us/n/a6a94f63g8Xa3"><img src="band.png" alt="band" width="20" height="20"></a>
+                        <a href="https://www.facebook.com/%EA%B7%BC%ED%98%84%EB%8C%80%EC%82%AC%EB%AF%B8%EC%88%A0%EA%B4%80%EB%8B%B4%EB%8B%A4-332929684309604"><img src="facebook.png" alt="facebook" width="20" height="20"></a>
+                    </p>
+                </div>
+                <div class="footer-bottom">
+                    <p>ⓒ 2021.조이홍. All rights reserved.</p>
+                </div>
+            </div>
+    <!-- Code injected by live-server -->
+    <script type="text/javascript">
+        // <![CDATA[  <-- For SVG support
+        if ('WebSocket' in window) {
+            (function () {
+                function refreshCSS() {
+                    var sheets = [].slice.call(document.getElementsByTagName("link"));
+                    var head = document.getElementsByTagName("head")[0];
+                    for (var i = 0; i < sheets.length; ++i) {
+                        var elem = sheets[i];
+                        var parent = elem.parentElement || head;
+                        parent.removeChild(elem);
+                        var rel = elem.rel;
+                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                        }
+                        parent.appendChild(elem);
+                    }
+                }
+                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                var address = protocol + window.location.host + window.location.pathname + '/ws';
+                var socket = new WebSocket(address);
+                socket.onmessage = function (msg) {
+                    if (msg.data == 'reload') window.location.reload();
+                    else if (msg.data == 'refreshcss') refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                    console.log('Live reload enabled.');
+                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                }
+            })();
+        }
+        else {
+            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+        }
+        // ]]>
+    </script></body>
+    </html>
+   
+
+</html>
