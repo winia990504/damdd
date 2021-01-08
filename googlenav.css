@@ -826,7 +826,7 @@ section{
 }
 
 
-/*
+
 @media only screen and (max-width: 767px) {
 	.footer{
         position: absolute;
@@ -835,14 +835,14 @@ section{
         right: 0;
     }
 }
-*/
+
 
 
 @media only screen and (max-width: 767px) {
     .wrap{
         position:relative;
-        height:calc(100% - 2px);
-        top: 2px;
+        height:calc(100% - 75px);
+        top: 75px;
         
     }
     }
