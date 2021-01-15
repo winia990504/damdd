@@ -495,6 +495,7 @@
   /*푸터 css*/
   
   footer {
+    
   bottom: 0;
   left: 0;
   right:0;
@@ -650,12 +651,23 @@
 
 
   .boddy {
-    margin: 0;
+    /*
+    position:relative;
+    left:14%;
+    margin:-200px;
+    max-width:100%;
+    */
+
+    /*margin: 0;
     padding: 0;
+    */
+
+    margin-bottom:10px;
+
     display:flex;
     justify-content: center;
     align-items: center;
-    min-height:100vh;
+    min-height:30vh;
     font-family: 'Poppins', sans-serif;
    
 }
@@ -677,6 +689,12 @@
     box-sizing: border-box;
     overflow:hidden;
     text-align:center;
+}
+
+.container2 .box .fuckhong {
+  position:relative;
+  z-index:1;
+  transition:0.5s;
 }
 
 .container2 .box .icon {
@@ -727,14 +745,66 @@ background: #2196f3;
 
 
 
-.container2 .box:hover .content {
+.container2 .box:hover .fuckhong {
   color:#fff;
 }
 
-.container2 .box .content h3{
+.container2 .box .fuckhong h3{
   font-size: 20px;
   margin: 10px 0;
   padding: 0;
 }
 
+@media screen and (max-width: 767px) {
+
+  .boddy {
+    /*margin-top: -170px;*/
+    margin-top:-30%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /*min-height:0;*/
+    font-family: 'Poppins', sans-serif;
+    
+  }
+
+  .container2 {
+    display:flex;
+    width:100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container2 .box {
+  position: relative;
+  /*width:100%;*/
+  padding:10px;
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0,0,0,.1);
+  border-radius:4px;
+  margin: 1%;
+  box-sizing: border-box;
+  overflow:hidden;
+  text-align:center;
+}
+.container2 .box .icon {
+  position: relative;
+  width:30px;
+  height:30px;
+  color: #fff;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  margin: 0 auto;
+  border-radius: 50%;
+  font-size:15px;
+  font-weight:300;
+  transition:1s;
+}
+.container2 .box .fuckhong h3 {
+  font-size:15px;
+}
+
+  }
 
